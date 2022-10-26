@@ -46,4 +46,14 @@ public class ValidateUserInfo {
             System.out.println("Invalid Phone Number");
         }
     }
+    public void checkPassword(){
+        System.out.println("Enter the Password : ");
+        String s = sc.nextLine();
+        if(Pattern.matches("^[A-Za-z]{8,}", s)){
+            System.out.println("Password Accepted!");
+        }
+        else {
+            System.out.println("Password does not satisfies condition ");
+        }
+    }
 }

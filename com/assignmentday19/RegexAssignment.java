@@ -9,6 +9,7 @@ public class RegexAssignment {
         validateUserInfo.checkLastName();// UC2
         validateUserInfo.checkEmail();//UC3
         validateUserInfo.checkPhone();//UC4
+        validateUserInfo.checkPassword();//UC5 Rule - 1
     }
 
 }
