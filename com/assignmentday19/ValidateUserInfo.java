@@ -37,4 +37,13 @@ public class ValidateUserInfo {
             System.out.println("Invalid Email Input!");
         }
     }
+    public void checkPhone() {
+        System.out.println("Enter Phone Number : ");
+        String s = sc.nextLine();
+        if (Pattern.matches("^[+][0-9]{2}+[ ]?[0-9]{10}$", s)) {
+            System.out.println("Phone Number Validated");
+        } else {
+            System.out.println("Invalid Phone Number");
+        }
+    }
 }
