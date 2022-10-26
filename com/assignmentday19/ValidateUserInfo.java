@@ -49,7 +49,7 @@ public class ValidateUserInfo {
     public void checkPassword(){
         System.out.println("Enter the Password : ");
         String s = sc.nextLine();
-        if(Pattern.matches("^[A-Za-z]{8,}", s)){
+        if(Pattern.matches("^[a-z](?=.*[A-Z]).{8,}$", s)){ // UC 5 Rule-2
             System.out.println("Password Accepted!");
         }
         else {
