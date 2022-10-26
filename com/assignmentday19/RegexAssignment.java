@@ -6,6 +6,7 @@ public class RegexAssignment {
         System.out.println("------------------- Pattern Matching Assignment -------------------");
         ValidateUserInfo validateUserInfo = new ValidateUserInfo();
         validateUserInfo.checkFirstName();// UC1
+        validateUserInfo.checkLastName();// UC2
     }
 
 }
