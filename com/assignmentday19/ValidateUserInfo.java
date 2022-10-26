@@ -27,4 +27,14 @@ public class ValidateUserInfo {
             System.out.println("Invalid Input!");
         }
     }
+
+    public void checkEmail() {
+        System.out.println("Enter Email Address : ");
+        String s = sc.nextLine();
+        if (Pattern.matches("^[a-zA-Z0-9]+([.][0-9a-zA-Z]+)*@[a-zA-Z]+.[a-z]{2,3}([.][a-z]{2,3})*$", s)) {
+            System.out.println("Email Validated");
+        } else {
+            System.out.println("Invalid Email Input!");
+        }
+    }
 }
